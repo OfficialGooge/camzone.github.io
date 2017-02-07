@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+/* Import the popular Roboto font from Google Fonts. */
+
+/*
+The dot infront of the name of the element, means that it is a class attribute, e.g.
+<div class="test">
+would be referred to as '.test' in CSS.
+
+For basic HTML tags, it does not require a dot.
+
+A full list of CSS elements, the official reference can be found here:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+Most developers try to avoid using the popular site W3Schools, as it doesn't make
+outdated HTML Tags & CSS elements very obvious. And so your site may not work
+with all browsers.
+
+CSS Frameworks like Bootstrap are usually used to save a load of time, and they
+include a number of 'CSS Hacks', which are pieces of CSS code that use odd
+ways to get elements to display correctly on older browsers. Doing this for every
+project is a total pain.
+
+Bootstrap contains lots of nice components for usage.
+*/
+
+/* Make everything inside of the <html> tag use this font */
+html,body,head {
+	font-family: 'Roboto', sans-serif;
+}
+
+.jumbotron { /* Make the jumbotron not touch the top of the website, and give it a margin. */
+	margin-top:50px;
+} 

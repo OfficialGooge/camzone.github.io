@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>Example Website</title> <!-- Defines the text inside of the browser tab title -->
+
+		<meta charset="UTF-8">
+		<meta name="description" content="A template for making your website."> <!-- The description of the site, used in most search engines, like Google and Bing. -->
+		<meta name="keywords" content="HTML,CSS,JS,JQuery"> <!-- Keywords for search engines -->
+		<meta name="author" content="Alydus"> <!-- The author of the webpage -->
+
+		<!-- Start linking external CSS files -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"> <!-- Link bootstrap.min.css - Main bootstrap framework file -->
+		<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"> <!-- Link font-awesome.min.css - Main font awesome file, for icons -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"> <!-- Link style.css - Link main css style file, for CSS. -->
+
+		<!-- Start linking external JS (Javascript) files -->
+		<script src="js/jquery-2.2.4.min.js"></script> <!-- Link jquery.min.js - Main jquery file, a very useful JS framework -->
+		<script src="js/bootstrap.min.js"></script> <!-- Link bootstrap.min.js - Main bootstrap framework JS file -->
+
+		<!--
+		If a file has .min in it, it means it is minifed. This means that the file is
+		all on one line. This is done so the browser loads it faster, it can process
+		the code faster if it's on the same line.
+
+		It's good practice to always include minified files, the only exception is when
+		the website is in development and a file is constantly being changed. Obviously
+		changing a file while it's minified is alot harder than non-minified.
+		-->	
+
+	</head>
+
+	<body>
+		<!--
+		For a full list of bootstrap components see here:
+		http://getbootstrap.com/components/ - bootstrap.min.css
+
+		For a full list of javascript bootstrap components see here:
+		http://getbootstrap.com/javascript/ - bootstrap.min.js
+
+		Please remember bootstrap.min.js requires JQuery, it will not work with higher than JQuery version 2.2.4
+		-->
+
+		<!-- 
+		The class 'container' is a bootstrap component that adds a margin on the left and right of the content, so it
+		doesn't reach each side of the page.
+
+		For the opposite of this, you can use 'fluid-container'
+		 -->
+
+		<div class="container">
+
+			<!--
+			The class 'jumbotron' is a bootstrap component that is used for a header of a page, it usually contains a
+			header and a smaller text. It is great for summarising the content of the page.
+			-->
+
+			<div class="jumbotron">
+				<h1>Example Bootstrap Website</h1>
+				<p>This is a framework for developing a bootstrap website. <small>By Alydus</small></p>
+			</div>
+
+			<div class="alert alert-success" role="alert">
+  				<p>This is an example alert, it is a success type, there is four different types of colour types in bootstrap, success, danger, warning and info.</p>
+			</div>
+
+			<div class="alert alert-danger" role="alert">
+  				<p>This is an example alert, it is a success type, there is four different types of colour types in bootstrap, success, danger, warning and info.</p>
+			</div>
+
+			<div class="alert alert-warning" role="alert">
+  				<p>This is an example alert, it is a success type, there is four different types of colour types in bootstrap, success, danger, warning and info.</p>
+			</div>
+
+			<div class="alert alert-info" role="alert">
+  				<p>This is an example alert, it is a success type, there is four different types of colour types in bootstrap, success, danger, warning and info.</p>
+			</div>
+
+			<hr> <!-- Divider tag -->
+
+			<!--
+			Panels can also be styled by overridding the 'panel-default' class, e.g, 'panel-success' or 'panel-warning', any of the colour types.
+			-->
+
+			<div class="panel panel-default">
+  				<div class="panel-body">
+    			Basic panel example
+  				</div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Panel title</h3>
+  				</div>
+  				<div class="panel-body">
+    			Panel content
+  				</div> 
+			</div>
+
+			<div class="well">
+				This is a well, it is a class with a small gray indent, it is good for showing off small amounts of information.
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
